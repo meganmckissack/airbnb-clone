@@ -1,14 +1,14 @@
 import React from "react";
-import craterLake from "../img/crater-lake.jpg";
 
-function Card() {
+
+function Card(props) {
   return (
     <React.Fragment>
       <div className="card">
-        <img className="card-img" src={craterLake} alt="crater lake"/>
+        <img className="card-img" src={props.img} alt="crater lake"/>
         <div className="cardText">
-        <p>Crater Lake</p>
-        <p>National Park</p>
+        <p>{props.location}</p>
+        <p>{props.description}</p>
         </div>
       </div>
     </React.Fragment>
