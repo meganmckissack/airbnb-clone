@@ -8,7 +8,7 @@ const data = [
   {
       id: 2,
       location: "Mount Hood",
-      description: "potentially active stratovolcano",
+      description: "stratovolcano",
       img: "Mount-Hood.jpg"
   },
   {

@@ -48,15 +48,26 @@
   padding: 2%;
 }
 
+.cards-list {
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+
 .card {
-  width: 250px;
+  width: 175px;
   height: 300px;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -65,5 +76,5 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  line-height: 3px;
+  line-height: 1px;
 }

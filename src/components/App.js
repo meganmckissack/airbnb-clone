@@ -8,16 +8,17 @@ function App() {
   const cards = data.map(item => {
     return ( 
       <Card 
-        img={item.img}
-        location={item.location}
-        description={item.description}
+        key={item.id}
+        item={item}
       />
     )
   })
   return (
     <React.Fragment>
     <NavBar />
+    <section className="cards-list">
     {cards}
+    </section>
     </React.Fragment>
   );
 }
